@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 class="mb-4">{{ title }}</h1>
+  
+  <ul class="my-4">
+    <li *ngFor='let user of users'>{{ user.id }} - {{ user.userName }}</li>
+  </ul>
+
+  <table class="table table-hover table-border">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.userName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
